@@ -1,0 +1,501 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+    {% load staticfiles %}
+        <!-- Basic Page Needs
+        ================================================== -->
+       {% block head %}
+        <title>Electro Power</title>
+       {% endblock %}
+    </head>
+    <body>
+    {% block content %}
+       
+        <!--
+        ==================================================
+        Slider Section Start
+        ================================================== -->
+        <section id="hero-area" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="block wow fadeInUp" data-wow-delay=".3s">
+                            
+                            <!-- Slider -->
+                            <section class="cd-intro">
+                                <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                                <span>HI, WE ARE A GROUP OF</span><br>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">ELECTRICAL CONSULTANTS</b>
+                                    <b>ENGINEERS</b>
+                                    <b>CONTRACTORS</b>
+                                </span>
+                                </h1>
+                                </section> <!-- cd-intro -->
+                                <!-- /.slider -->
+                                <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
+                                    With 10 years experience, We've occupied many roles including Electrical Consultancy<br> and Contracts. This site showcases some of our work.
+                                </h2>
+                                <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works" >View Works</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--/#main-slider-->
+            <!--
+            ==================================================
+            Slider Section Start
+            ================================================== -->
+            <!-- <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <h2>
+                                ABOUT ME
+                                </h2>
+                                <p>
+                                    Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <img src="{% static 'images/about/about.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> --> <!-- /#about -->
+            <!--
+            ==================================================
+            Portfolio Section Start
+            ================================================== -->
+            <section id="works" class="works">
+                <div class="container">
+                    <div class="section-heading">
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">We Do</h1>
+                        <p class="wow fadeInDown" data-wow-delay=".5s">
+                            Turnkey projects of Electrical Installation.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 col-xs-12">
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                                <div class="img-wrapper">
+                                    <img src="{% static 'images/portfolio/item-1.jpg' %}" class="img-responsive" alt="this is a title" >
+                                    <div class="overlay">
+                                        <!-- <div class="buttons">
+                                            <center>
+                                                <a target="_blank" href="single-portfolio.html">Details</a>
+                                            </center>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#show_1" id="show_h1"  data-wow-delay=".9s" data-section="#show_1" class="smooth-scroll">
+                                    Industrial
+                                </a>
+                                </h4>
+                                <p>
+                                    Designing n Supplying.
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <div class="img-wrapper">
+                                    <img src="{% static 'images/portfolio/item-2.jpg' %}" class="img-responsive" alt="this is a title" >
+                                    <div class="overlay">
+                                        <!-- <div class="buttons">
+                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#show_2" id="show_h2" data-wow-delay=".9s" data-section="#show_2" class="smooth-scroll">
+                                    Commercial
+                                </a>
+                                </h4>
+                                <p>
+                                    Complete Installation.
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-12">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <div class="img-wrapper">
+                                    <img src="{% static 'images/portfolio/item-3.jpg' %}" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                       <!--  <div class="buttons">
+                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#show_3" id="show_h3"  data-wow-delay=".9s" data-section="#show_3" class="smooth-scroll">
+                                    Residential
+                                </a>
+                                </h4>
+                                <p>
+                                    Complete Installation.
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                                <div class="img-wrapper">
+                                    <img src="{% static 'images/portfolio/item-4.jpg' %}" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <!-- <div class="buttons">
+                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a href="#show_4" id="show_h4"  data-wow-delay=".9s" data-section="#show_4" class="smooth-scroll">
+                                    New Ventures
+                                </a>
+                                </h4>
+                                <p>
+                                    Products
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- #works -->
+            <!--
+            ==================================================
+            Portfolio Section Start
+            ================================================== -->
+            <section id="show_1" class="section-tag">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <h2>
+                                    Designing
+                                </h2>
+                                <p>
+                                    Designing of HT and LT substations including.......
+                                </p>
+                                <p>
+                                    HT Panel, Power Transformer, HT Cable, LT Panel, Automatic Power Factor,
+                                    Control Panel, AMF Panel, LT cable, Distribution Panels and Earthing System.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <img src="{% static 'images/about/about.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <img src="{% static 'images/about/about.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <h2>
+                                    Supply, Installation, Testing & Commissioning
+                                </h2>
+                                <p>
+                                    Supplying and Installtion of HT and LT substations including.......
+                                </p>
+                                <p>
+                                    HT Panel, Power Transformer, HT /LT Cable, Package Substation, Main LT Panels, Automatic Power Factor,
+                                    Control Panel, AMF Panel, Distribution Panels,Generator Set, Earthing System and Earth Conductor.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="show_2" class="section-tag">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <h2>
+                                    Designing, Supply, Installation, Testing & Commissioning
+                                </h2>
+                                <p>
+                                    Complete electrical installation including.......
+                                </p>
+                                <p>
+                                    Electric Panel, HT/LT Cables, Generator Set, Earthing System, Street Lighting and Flood Lighting, LAN Networking, CCTV System, Fire Fighting System, EPABX, Servo Stablalizers.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <img src="{% static 'images/about/about.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="show_3" class="section-tag">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <h2>
+                                    Designing, Supply, Installation, Testing & Commissioning
+                                </h2>
+                                <p>
+                                    Complete electrical installation including.......
+                                </p>
+                                <p>
+                                    Electrical Panels, Cables, Wiring, Switches, Home Automation, Lighting Design of Indoor and Outdoor Lighting, Lan and Audio/Video Network, CCTV and Door Phone System, Inverter System and Servo Stablalizers.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <img src="{% static 'images/about/about.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="show_4" class="section-tag">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <h2>
+                                    Conductive Concrete Earthing ( MARCONITE )
+                                </h2>
+                                <p>
+                                    We are channel partners of M/S Inter. Tech. 
+                                </p>
+                                <p>
+                                    Providing Earthing solutions for various applications usding Marconite precast earthing Electrodes.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <img src="{% static 'images/about/about.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <img src="{% static 'images/about/about.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <h2>
+                                    Solar Power
+                                </h2>
+                                <p>
+                                    With the growing demand of alternative solutions in power sector.
+                                    We have ventured in providing professional consultancy, engineering and construction services across solar energy sector.
+                                </p>
+                                <p>
+                                    Our core products are :<br>
+                                    &nbsp - PV cells<br>
+                                    &nbsp - Thermal System <br>
+                                    &nbsp - Street lights solutions<br>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section id="feature">
+                <div class="container">
+                    <div class="section-heading">
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Offer From Me</h1>
+                        <p class="wow fadeInDown" data-wow-delay=".5s">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,<br> quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-flask-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-lightbulb-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Well documented.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-lightbulb-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Well documented.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-americanfootball-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Free updates</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-keypad-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Solid Support</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-barcode-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Simple Installation</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> --> <!-- /#feature -->
+                            
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
+                                <a href="../contact" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Us</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+
+    {% endblock %}
+    {% block script %}
+
+    <!-- <script type="text/javascript">
+    function show_tag(val){
+        if(val == '1') {
+            $('#show_1').fadeIn();
+        }
+        else {
+            $('#show_2').fadeOut();
+            $('#show_3').fadeOut();
+            $('#show_4').fadeOut();
+        }
+        if(val == '2') {
+            $('#show_2').fadeIn();
+        }
+        else {
+            $('#show_1').fadeOut();
+            $('#show_3').fadeOut();
+            $('#show_4').fadeOut();
+        }
+        if(val == '3') {
+            $('#show_3').fadeIn();
+        }
+        else {
+            $('#show_2').fadeOut();
+            $('#show_1').fadeOut();
+            $('#show_4').fadeOut();
+        }
+        if(val == '4') {
+            $('#show_4').fadeIn();
+        }
+        else {
+            $('#show_2').fadeOut();
+            $('#show_3').fadeOut();
+            $('#show_1').fadeOut();
+        }
+}
+    </script> -->
+
+    {% endblock %}
+                
+        </body>
+    </html>
