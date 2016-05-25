@@ -23,19 +23,19 @@ def contact(request):
 		subject = request.POST['subject']
 		message = request.POST['message']
 		try:
-			send_email = EmailMessage(subject,name + message,email,EMAIL_USER)
+			send_email = EmailMessage(subject,name + "\n" + email + "\n" + message,email,[EMAIL_USER])
 			#send_email.attach_file("filename")
 			try:
 				send_email.send()
-				return render(request,"electro/contact.html",{'status':'Email successfully send. Thank you for showing interest our team contact you soon.','type':'contact'})
+				#return render(request,"electro/index.html",{'status':'Email successfully send. Thank you for showing interest our team contact you soon.','type':'contact'})
 			except:
 				return render(request,"electro/contact.html",{'status':'Some error in email service. Please try again later.','type':'contact'})
 		except BadHeaderError:
 			return render(request,"electro/contact.html",{'status':'Some error in email service. Please try again later.','type':'contact'})
 
 		try:
-			mess = 'Hello '+name+', Thanks for showing interest our team contact you soon. Regards.'
-			send_email = EmailMessage('noreply',mess,EMAIL_USER,email)
+			mess = 'Hello '+name+',\nThanks for showing interest, our team contact you soon.' + '\n' + 'Regards.'
+			send_email = EmailMessage('Regarding your query to Electro Power',mess,EMAIL_USER,[email])
 			try:
 				send_email.send()
 				return render(request,"electro/contact.html",{'status':'Email successfully send. Thank you for showing interest our team contact you soon.','type':'contact'})
